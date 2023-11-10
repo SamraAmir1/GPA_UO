@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University GPA Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <img src="uniofokara.jpg" alt="University Logo" class="logo">
+    <h2>University of Okara</h2>
+    <h3>GPA Calculator</h3>
+
+    <div id="subjects-container">
+        <div class="subject-container">
+            <label for="subject-name">Subject Name:</label>
+            <input type="text" class="subject-name" placeholder="Enter subject name">
+
+            <label for="credit-hours">Credit Hours:</label>
+            <select class="credit-hours">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <label for="obtained-marks">Obtained Marks:</label>
+            <input type="number" class="obtained-marks" placeholder="Enter obtained marks">
+
+            <button onclick="calculateGPA()">Add Subject</button>
+        </div>
+    </div>
+
+    <button onclick="calculateOverallGPA()">Calculate Overall GPA</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
